@@ -5,9 +5,8 @@ from linebot.models import TextSendMessage
 # file = open('info.json','r')
 # info = json.load(file)
 
-with open('info.json', 'r') as file:
-    info = json.load(file)
-
+file = open('info.json','r')
+info = json.load(file)
 
 CHANNEL_ACCESS_TOKEN = info['CHANNEL_ACCESS_TOKEN']
 line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
